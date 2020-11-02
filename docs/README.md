@@ -14,11 +14,13 @@ This documentation describes a list of rules available by enabling this ruleset.
 
 ## API Specification Rules
 
-These are the rules that warn against invalid values generated from [azure-rest-api-specs](https://github.com/Azure/azure-rest-api-specs). Currently, 259 rules are available.
+These are the rules that warn against invalid values generated from [azure-rest-api-specs](https://github.com/Azure/azure-rest-api-specs). Currently, 261 rules are available.
 
 |Rule|Enabled by default|
 | --- | --- |
+|[azurerm_analysis_services_server_invalid_name](rules/azurerm_analysis_services_server_invalid_name.md)|✔|
 |[azurerm_analysis_services_server_invalid_querypool_connection_mode](rules/azurerm_analysis_services_server_invalid_querypool_connection_mode.md)|✔|
+|[azurerm_analysis_services_server_invalid_resource_group_name](rules/azurerm_analysis_services_server_invalid_resource_group_name.md)|✔|
 |[azurerm_application_insights_analytics_item_invalid_scope](rules/azurerm_application_insights_analytics_item_invalid_scope.md)|✔|
 |[azurerm_application_insights_analytics_item_invalid_type](rules/azurerm_application_insights_analytics_item_invalid_type.md)|✔|
 |[azurerm_application_insights_web_test_invalid_kind](rules/azurerm_application_insights_web_test_invalid_kind.md)|✔|

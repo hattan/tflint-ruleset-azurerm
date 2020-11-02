@@ -10,7 +10,9 @@ import (
 
 // Rules is a list of rules generated from azure-rest-api-specs
 var Rules = []tflint.Rule{
+	NewAzurermAnalysisServicesServerInvalidNameRule(),
 	NewAzurermAnalysisServicesServerInvalidQuerypoolConnectionModeRule(),
+	NewAzurermAnalysisServicesServerInvalidResourceGroupNameRule(),
 	NewAzurermApplicationInsightsAnalyticsItemInvalidScopeRule(),
 	NewAzurermApplicationInsightsAnalyticsItemInvalidTypeRule(),
 	NewAzurermApplicationInsightsWebTestInvalidKindRule(),
