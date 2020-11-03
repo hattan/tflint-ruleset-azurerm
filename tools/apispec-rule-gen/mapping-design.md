@@ -29,12 +29,14 @@ mapping "azurerm_analysis_services_server" {
   name = CheckServerNameAvailabilityParameters.name,
   querypool_connection_mode = AnalysisServicesServerMutableProperties.querypoolConnectionMode,
   resource_group_name = ResourceGroupNameParameter
-  
+  spec_file = "analysisservices.json""
+
   importMappings[
     {
       minVersion: "v2.0.0",
       maxVersion: "v2.10.0",
-      import_path: "azure-rest-api-specs/specification/analysisservices/resource-manager/Microsoft.AnalysisServices/stable/2017-08-01/analysisservices.json"},
+      import_path: "azure-rest-api-specs/specification/analysisservices/resource-manager/Microsoft.AnalysisServices/stable/2017-08-01/analysisservices.json"
+    },
     {
       minVersion: "v2.11.0",
       maxVersion: "v2.20.0",
