@@ -1,0 +1,42 @@
+1) workflow to run when AzureRM Updates (Version Support)
+  - Get Schema.json from new provider
+  - Load all resources from schema.
+  - Generate Mappings for each each resource
+    - Using go parse, inspect source for the resource.
+    - Get the GoSDK version based on resource.
+    - Corrlate GOSDK version with Open API spec 
+  - Generate Rules for each each resource.
+  - Tag Rules and deploy artifact to releases.
+
+ Notes:
+  Simplfy mapping with version greater than (or range.)
+
+* Bash script 
+
+2) Custom Rules :
+  - VM Size Automation generated from api instead of docs.
+  - Storage Account Name Rule. 
+  - VM UserName rule - !root,!admin, !AzureUser
+
+3) Generate Unit Tests for testing the linter with azurerm ruleset.
+
+Dev
+
+
+Fork Repo:
+Board - Spike getting eveyrone ramped
+Automat
+
+Goals:
+
+* Workflow to generate Mappings.
+* Go Executable to be called in a workflow to generate file.
+* Build and Test
+* Tests
+* Contributions
+
+
+Rampup
+Environment set up and debug support for tflint.
+Docs on writing and Running tests for rules.
+Clean up fork or create a new org and re-fork
