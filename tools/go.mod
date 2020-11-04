@@ -3,6 +3,7 @@ module github.com/terraform-linters/tflint-ruleset-azurerm/tools
 go 1.14
 
 require (
+	github.com/go-git/go-git/v5 v5.2.0
 	github.com/hashicorp/hcl/v2 v2.6.0
 	github.com/onsi/ginkgo v1.12.0 // indirect
 	github.com/onsi/gomega v1.9.0 // indirect
